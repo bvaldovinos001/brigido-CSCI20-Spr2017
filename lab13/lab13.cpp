@@ -23,5 +23,5 @@
     futurePopulation = currentPopulation + (netGainPerYear*yearsPassed);
     //Future population = population in 2017 plus the yearly growth of the population until chosen year.
     cout << "The population of the U.S. in the year ";
-    cout << futureYear; cout <<" will be "; cout << futurePopulation;
+    cout << futureYear; cout <<" will be "; cout << futurePopulation;cout<<".";
  }
