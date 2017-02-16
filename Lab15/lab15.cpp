@@ -12,7 +12,7 @@
      string     oneVerb;
      string   twoVerb;
 
-cout<<"Insert a character name, make it quick!" <<endl;
+cout<<"Insert a character name:" <<endl;
 cin>> oneName;
 cout<<"Insert an adjective (describes):" <<endl;
 cin>> oneAdjective;
@@ -28,6 +28,6 @@ cout<<"He really liked "<<oneVerb <<" in rain puddles and playing in the rain. "
 cout<<"One "<<oneAdjective<<" day, however, he went outside to happily play in the rain. ";
 cout<<"When he jumped in a puddle, he "<<twoVerb<<".";
 cout<<"The puddle was so deep that he came out "<<oneNoun;
-cout<<"and he never jumped in a puddle again. ";
+cout<<" and he never jumped in a puddle again. ";
 
  }
