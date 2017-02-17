@@ -23,16 +23,21 @@
 
  EmployeeData employeeInfo;
  
-
  
     cout<< "Enter your name:"<<endl;
-    getline (cin,employeeInfo.empName);
+    getline (cin,empName);
     cout<< "Enter hourly rate:"<<endl;
-    cin>> employeeInfo.hrlyRate;
+    cin>> hourlyRate;
     cout<< "Enter hours worked per week:"<<endl;
-    cin>> employeeInfo.hrsWeek;
+    cin>> hoursWeek;
     
-    grossIncome = (employeeInfo.hrsWeek)*(employeeInfo.hrlyRate);  //Weekly income before deductions.
+    
+     
+    employeeInfo.empName = empName;
+    employeeInfo.hrlyRate = hourlyRate;
+    employeeInfo.hrsWeek = hoursWeek;
+    
+    grossIncome = (hoursWeek)*(hourlyRate);  //Weekly income before deductions.
     netIncome = (grossIncome - hlthInsurance)*taxDeduct; /* Weekly income after deductions. 
                                                             Health insurance deducted, the remainder was taxed at 17% */
     
