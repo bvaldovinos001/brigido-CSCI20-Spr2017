@@ -23,4 +23,6 @@ Constructing a monster using struct
      Freakystein.ears = "Wackus";
      Freakystein.nose = "Vegitas";
      Freakystein.mouth = "Vegitas";
+     
+
  }
