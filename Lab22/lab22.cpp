@@ -3,6 +3,7 @@
    THis program generates a random number from 1 to 100.*/
    
 #include <iostream>
+#include <cmath>
 #include <cstdlib>     // Use random.
 #include <ctime>      // Use of time.
 using namespace std;

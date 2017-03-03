@@ -3,30 +3,39 @@
    This program creates a random number between two chosen limits,
    the limits being chosen by the user. */
    
-   #include <iostream>
-   #include <cstdlib>
+    #include <iostream>
+    #include <cmath>
+    #include <cstdlib>    
+    #include <ctime>
    using namespace std;
    
-   
-   int swapNum(int numX, int numY, int newNumX, newNumY) {
-    int newNumX = numY;
-    int newNumY = numX;
-
-   int RandomNumber (int newNumX, int newNumY) 
-int newNumX = 0;  
-int newNumY = 0; 
-   }
-   
-   
-int main(){
-
-
-
-       cout<< "Enter lower number:"<<endl;
-       cin>> numX;
-       cout<< "Enter upper number:"<<endl;
-       cin>> numY;
-       
-    cout<<((rand()% newNumX - newNumY) + newNumY << endl;
+ int SwapNum( int numX, int numY, int& newNumX, int& newNumY) {
+        newNumX = numY;
+        newNumY = numX;
+            }
+int randNum(int numX, int numY){
+    int newNumY = 0;
+    int newNumX = 0;
+    int randomNum = 0;
+    SwapNum(numX, numY, newNumX, newNumY);
+    srand(time(0));
+    randomNum = (rand()% (newNumX - newNumY)) + newNumY;
     
-    }
+   cout<< randomNum;
+}
+      int main(){
+      
+      int numX = 0;
+      int numY = 0;
+      
+      
+      cout<<"Enter lower number:"<<endl;
+       cin>>numX;
+       cout<<"Enter upper number:"<<endl;
+       cin>>numY;
+       cout<< "The randomly generated number is: ";
+       
+       randNum(numX, numY);
+
+          
+      }
