@@ -4,7 +4,6 @@
    the limits being chosen by the user. */
    
     #include <iostream>
-    #include <cmath>
     #include <cstdlib>    
     #include <ctime>
    using namespace std;
