@@ -1,7 +1,8 @@
 /* Brigido Valdovinos
    02/28/2017
    This program creates a random number between two chosen limits,
-   the limits being chosen by the user. */
+   the limits being chosen by the user. 
+   Then number generated is converted to kilograms, then to pounds.*/
    
     #include <iostream>
     #include <cmath>
