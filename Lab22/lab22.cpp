@@ -7,14 +7,21 @@
 #include <cstdlib>     // Use random.
 #include <ctime>      // Use of time.
 using namespace std;
+
+
+int randNum(int GenNum);
+int randomNum = 0;
+randomNum = ((rand() % 100) + 1);
+cout<< RandNum;       /* ((rand() % 100) generates a number 
+                                            between 0 and 99. "+ 1" adds one so 
+                                            that 0 is not a generated number. */
+
 int main () {
-  
   srand(time(0));  // Used to generate a random number.
 cout<< "Your randomly generated number is: ";
 
-cout<<((rand() % 100) + 1) << endl;        /* ((rand() % 100) generates a number 
-                                            between 0 and 99. "+ 1" adds one so 
-                                            that 0 is not a generated number. */
+randNum(GenNum);
+
 
   
 }

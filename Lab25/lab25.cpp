@@ -66,6 +66,7 @@ int book5Year;
      
                 //User input for all data.
    cout<<"First book: Enter tittle, author, and published year:"<<endl;
+   getline(cin, book1Author);
    cin>>book1Tittle>>book1Author>>book1Year;
    cout<<endl;
    
