@@ -1,6 +1,6 @@
 /* Brigido Valdovinos
    03/09/2017
-   Creating a class for five books that includes title, author, copyright year.
+   
 */
 
 #include <iostream>
@@ -22,6 +22,7 @@ class TemperatureConverter
     }
     
     double TemperatureConverter::GetTempFromKelvin()const {
+    TempInCel = 
     return kelvin_;
     }
 
