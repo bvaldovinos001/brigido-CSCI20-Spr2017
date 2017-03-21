@@ -9,19 +9,28 @@
 using namespace std;
 
 
-int randNum(int GenNum);
-int randomNum = 0;
-randomNum = ((rand() % 100) + 1);
-cout<< RandNum;       /* ((rand() % 100) generates a number 
-                                            between 0 and 99. "+ 1" adds one so 
-                                            that 0 is not a generated number. */
+
+int RandomNumber () {
+srand(time(0)); //This allows me to apply an rng to my code
+
+cout << "Your randomly generated number between 0 and 100 is " << (rand() % 101) +1 << endl; // this is my function
+
+
+}
+
+
+
+
 
 int main () {
-  srand(time(0));  // Used to generate a random number.
-cout<< "Your randomly generated number is: ";
-
-randNum(GenNum);
+RandomNumber(); //this will call my function
 
 
-  
-}
+
+
+
+
+
+
+
+} 

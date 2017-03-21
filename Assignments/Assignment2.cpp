@@ -10,7 +10,7 @@ class unitConverter {
 
 
 public:
-    void SetMiles(double convDist);
+    void SetMiles(double convDist);//Setting miles.
     void SetYards(double convDist);
     void SetFeet( double convDist);
     void SetInches(double convDist);  
@@ -22,31 +22,32 @@ public:
     
 private:
     double Miles;
-    double Yards;
-    double Feet;
-    double Inches;
+
 };
         
         
-    void unitConverter::SetMiles(double convDist) {
+    void unitConverter::SetMiles(double convDist) {     //Setting miles
         Miles = convDist;   }
-    double unitConverter::GetMiles() {
-        return Miles = Miles * 1;   }
+    double unitConverter::GetMiles() {      //Getting miles
+        return Miles = Miles * 1;   }//Returning
         
-    void unitConverter::SetYards(double convDist) {
-        Yards = convDist;   }
-    double unitConverter::GetYards() {
-        return Yards = Yards * 1760;   }
+    void unitConverter::SetYards(double convDist) {     //Setting yards.
+        Miles = convDist;   }
+    double unitConverter::GetYards() {      //Getting yards.
+        double convYards;
+        return convYards = Miles * 1760;   }//Returning
         
-        void unitConverter::SetFeet(double convDist) {
-        Feet = convDist;   }
-    double unitConverter::GetFeet() {
-        return Feet = Feet * 5280;   }
+        void unitConverter::SetFeet(double convDist) {      //Setting feet.
+        Miles = convDist;   }
+    double unitConverter::GetFeet() {   //Getting feet
+        double convFeet;
+        return convFeet = Miles * 5280;   }//Returning
     
         void unitConverter::SetInches(double convDist) {
-        Inches = convDist;   }
+        Miles = convDist;   }
     double unitConverter::GetInches() {
-        return Inches = Inches * 63360;   }
+        double convInches;
+        return convInches = Miles * 63360;   }//Returning
     
 int main() {
     
