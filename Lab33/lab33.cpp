@@ -15,7 +15,7 @@ int main(){
     
     int userNum;
     int randNum;
-    int userTrial;
+    int userTrial=1;
     
         cout<<"Enter a number between 1 and 50:"<<endl;
         
@@ -23,25 +23,40 @@ int main(){
 srand(time(0)); // Random number.
 randNum =((rand() % 50) +1);//Random from 1-50.
 
-
+for(userTrial=1; userTrial--;){
+   
+}        
+        
 while(userNum!=randNum)         { //while loop and conditions
     cin>>userNum;
+   
+
+    
+    
+if (userNum > 50){
+    cout<<"Enter valid number."<<endl;  }    
+    
+if (userNum < 0){
+    cout<<"Enter valid number."<<endl;  }        
+
+
+
+    
 if (userNum < randNum){     //If number too low
-    cout<< "Guess higher."<<endl;
-        
-            }
+    cout<< "Guess higher."<<endl;            }
     
 if (userNum > randNum){     //If number too high
-        
-        cout<< "Guess lower."<<endl; 
-        
-    }
-    
+    cout<< "Guess lower."<<endl;    }
+
 else {
-    userNum == randNum;     ////If number correct
+    userNum == randNum;     ////If number correct   
+
 }
-
                                            }
+cout<<endl <<userNum<< "! Winner!";
 
-cout<<endl<<userNum<< "! Winner!";
+
+
+    cout<<endl<<"It took "<<userTrial<<" tries";
+
 }
