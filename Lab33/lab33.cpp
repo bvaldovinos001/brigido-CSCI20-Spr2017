@@ -16,14 +16,14 @@ int main(){
     int userNum;
     int randNum;
     int userTrial=1;
-    
+    int userTrial2=0;
         cout<<"Enter a number between 1 and 50:"<<endl;
         
         
 srand(time(0)); // Random number.
 randNum =((rand() % 50) +1);//Random from 1-50.
 
-for(userTrial=1; userTrial--;){
+for(userTrial=1; userTrial++;){
    
 }        
         
@@ -57,6 +57,6 @@ cout<<endl <<userNum<< "! Winner!";
 
 
 
-    cout<<endl<<"It took "<<userTrial<<" tries";
+    cout<<endl<<"It took "<<userTrial2<<" tries";
 
 }
