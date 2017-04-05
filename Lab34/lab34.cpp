@@ -24,25 +24,16 @@ int main(){
         int sum=0;
         cout << "Enter numbers separated by spaces and terminated with a negative number." << endl;
          // read first number
-        cin>>sum;
         cin >> num;
-        
-        
-         while (sum >= 0)       {
-             
+         while (num >= 0)
+  {
                // add in to the sum
                sum = sum + num;
-               // read in next number (getting ready for next loop test)
-            
-            if (num >= 0)    {
-                num = sum + num;
-                
-                
-            } 
-           
-        cout << "Sum was " << sum << endl;
+                // read in next number (getting ready for next loop test)
+               cin >> num;
+        }
+                cout << "Sum was " << sum << endl;
                 return 0;
-}
 }
 
 /*
