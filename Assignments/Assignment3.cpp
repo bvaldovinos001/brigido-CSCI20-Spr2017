@@ -50,9 +50,7 @@ int main()
                 //and the game can be played a certain amount of times.
                 
             
-                                        if (userChoice<=0 && userChoice>=6){
-                                        cout<< "Enter valid choice: "<<endl;
-                                        }       
+                                       
                             
                                         //I have this in the loop so that the options are always explained.
                                 cout <<endl<<"    Chose an attacker: "<<endl;
