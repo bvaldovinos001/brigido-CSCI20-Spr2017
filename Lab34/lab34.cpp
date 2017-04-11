@@ -41,4 +41,7 @@ I first read through the program, not really looking for anything to fix, just l
 Before I ran the program, I looked for easy and obvious mistakes like missing semicolons, closed brackets, etc… 
 There were a lot of very unnessesary characters, like asterisks and white space; it made the program cluttered.
 The program had no end. Then I looked for the reason why the loop did not end.
+I noticed that the numbers weren't actually being added and changed num = ... to sum = ...
+The fist input was a number, but the second input was sending that number back to the sum so I changed it to 
+num so that it would continue the loop.
 */

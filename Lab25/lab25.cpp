@@ -8,6 +8,12 @@
  
  class bookInfo 
  {
+        private:            //Private data members
+        string Tittle;
+        string Author;
+        int Year;
+     
+     
      public:
         void SetTittle(string bookTittle);      //Mutator functions
         void SetAuthor(string bookAuthor);      //Setting the data
@@ -17,10 +23,7 @@
         string GetAuthor () const;
         int GetYear () const;
         
-    private:            //Private data members
-        string Tittle;
-        string Author;
-        int Year;
+
  };
  
     void bookInfo::SetTittle(string bookTittle){        
@@ -42,7 +45,12 @@
     int bookInfo::GetYear () const {
         return Year;       }
  
- int main() {
+ 
+ 
+ 
+        int main() {
+     
+     
     //Integers and strings for all the data for the five books.   
 string book1Tittle;
 string book1Author;
