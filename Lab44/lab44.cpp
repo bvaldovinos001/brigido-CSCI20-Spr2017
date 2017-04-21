@@ -3,7 +3,7 @@ Brigido Valdovinos
 04/20/2017
 The program creates user names by given first name and last name. 
 It will out put three different choices and will tell the user
-if the user name is taken.
+if the name and last name are the same.
 */
 
 #include <iostream>
@@ -39,7 +39,7 @@ char lastName [20];
                 }
 
 
-            if( strcmp(firstName,lastName) == 0 ) //Checking if names are the same.
+            while ( strcmp(firstName,lastName) == 0 ) //Checking if names are the same.
                 {
                     cout<< "First and last name are the same, re-enter last name: "<<endl;
                     cin>>lastName;
