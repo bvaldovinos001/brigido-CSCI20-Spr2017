@@ -8,7 +8,6 @@ if the name and last name are the same.
 
 #include <iostream>
 #include <cstring>  //Enables use of string functions.
-#include <cctype>
 using namespace std;
 
 
@@ -44,10 +43,6 @@ char lastName [20];
                     cout<< "First and last name are the same, re-enter last name: "<<endl;
                     cin>>lastName;
                 }
-
-
-
-
 
 cout<<endl << "Name: "<<firstName<<" "<<lastName<<endl;
 cout<< "Which user name would you like? "<<endl;

@@ -15,20 +15,23 @@ int main()
     
     
     
-
-int     itemInventory[10] = {   1,      2,      3,      4,      5,      6,      7,      8,      9,      10};
+string itemNames[10] = {"1. Paper", "2. Pencil", "3. Pen", "4. Eraser", "5. Notebook", "6. Marker", "7. Scissor", "8. Book", "9. Backpack", "10. Calculator"};
+//  int itemInventory[10] = {   1,      2,      3,      4,      5,      6,      7,      8,      9,      10};
 int itemPrice[10]         = {   2,      1,      2,      1,      3,      2,      4,     10,     20,      18};
 
 
-const int numItems = 10;
-int userChoice[numItems];
+
+
+
 
 
 cout<< "Choose what you would like to purchase."<<endl;
         for(int count = 0; count <10; count++)
             
-                cout<< itemInventory [count] << " costs $" <<itemPrice[count] <<"." <<endl;
-                
+                cout<< itemNames [count] << " costs $" <<itemPrice[count] <<"." <<endl;
+                cout<< "Enter a number corresponding to the item you want to purchase."<<endl;
+        
+        cin>>itemInventory;
 
 }
 
