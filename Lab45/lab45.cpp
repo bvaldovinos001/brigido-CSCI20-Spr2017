@@ -1,7 +1,7 @@
 /*
 Brigido Valdovinos
-04/20/2017
-The program creates user names by given first name and last name. 
+04/25/2017
+The program creates user names by given first name and last name using strings. 
 It will out put three different choices and will tell the user
 if the name and last name are the same.
 */
