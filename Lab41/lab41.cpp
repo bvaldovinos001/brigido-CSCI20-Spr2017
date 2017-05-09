@@ -4,7 +4,7 @@ Brigido Valdovinos
 
 */
 
-class ArrayTools
+
 
 
 
@@ -12,6 +12,9 @@ class ArrayTools
 #include <iostream>
 #include lab41.cpp
 using namespace std;
+
+
+class ArrayTools{};
 
 int main()
 {
