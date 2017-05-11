@@ -1,6 +1,6 @@
 #include <ctime>
 #include <cstdlib>
-#include "MyClass.h"
+#include "class.h"
 
 
 
