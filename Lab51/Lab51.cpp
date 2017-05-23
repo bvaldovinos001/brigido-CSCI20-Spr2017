@@ -17,9 +17,9 @@ int main() {
     cout << "Please enter a 10 letter word or less" << endl;  // output to the screen
     cin >> name;        // user input
     
-    char firststr; // lets you use firstr
+    char firststr; // lets you use firststr
     char * head  = name; //pointer variable points to the location of name
-    char * tail = name; // pointer variable points to the same location but as tail this time
+    char * tail = name; // pointer variable points to the same location but as tail this time, overides the last pointee
     nameLength = strlen(name); // it stores how long the name is, its based of the pointer
 
     cout << "Your word is " << firststr << endl; // outputs the word thats stored in firstr
