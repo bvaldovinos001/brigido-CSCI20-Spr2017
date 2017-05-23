@@ -16,15 +16,15 @@ using namespace std;
 
 class UserInfo{
  private:
-        string Name_;
+        string Name_;                           // Private variables will collect persons name and birthday
         int Birthday_;
-        int points_;
+        
     
  public:
         
         
         
-        void setName(string x,int y){
+        void setName(string x,int y){                                       // Class that will take in userinfo like name and birthday.
             Name_ = x;
             Birthday_ = y;
             cout << "Enter your name: " << endl;
@@ -91,7 +91,7 @@ int Dog_ = points[10];
 int Pig_ = points[11];
 
 
-string Rats;
+string Rats;                // variables to output which animal you have more characteristics you have
 string Oxs;
 string Tigers;
 string Rabbits;
@@ -107,10 +107,10 @@ string Pigs;
 
 UserInfo User;
 
-User.setName(name,birthday);
+User.setName(name,birthday);           
 
 ifstream Fin("animals.txt");    //inputting the file with the animal names
-ofstream Fout("Result.txt");
+ofstream Fout("Result.txt");    //outputting the results to a txt file
 
 
 
@@ -120,7 +120,7 @@ cout << "These are the animals that might be your Chinese zodiac sign:" << endl;
 
 
 if (Fin.good()) {
-    getline(Fin,animals);
+    getline(Fin,animals);                           // checking if file is open
     
     cout << animals << endl;
 
@@ -128,15 +128,16 @@ if (Fin.good()) {
 
 cout << endl;
 
-if(User.getBirthday() >= 1900 && User.getBirthday() < 2020){
+if(User.getBirthday() >= 1900 && User.getBirthday() < 2020){                    // if birthday is less thatn 1900 it wont work same with if the birthday is above 2020
 
     
 }
 else {
-    cout << "noooooooo" << endl;
+    cout << "Thats not a valid year please enter a year between 1900 and 2020" << endl;
+    User.setName(name,birthday);
 }
 
-for (int i = 0; i < 10; i++){
+for (int i = 0; i < 10; i++){                                                   //For loops to show which animal is associated with your birthday
     
     if (Rat[i] == User.getBirthday()){
         cout << "Your Chinese new year animal is a Rat." << endl;
@@ -260,7 +261,8 @@ cout<< "Are you a determined person or a doubtful person?" << endl;
 cin >> Input; 
 
    
-   
+
+//Question 1                                        //asking questions to see what animal you are according to your personality.
 if (Input == 1){
     Pig_ = Pig_ + 1;
 }   
@@ -592,26 +594,8 @@ cin >> Input;
                 cin >> Input;
             }
    
-   
-   
-   
-   
-   
-//Question24
-/*cout << "Do you tend to avoid arguments, yes or no?" << endl;
-cin >> Input;
-
-      if(Input == 1){
-        Rabbit_ = Rabbit_ + 1;
-    }
-        else if (Input == 2){
-            cout << "Next Question!" << endl;
-        }
-            else {
-                cin >> Input;
-            }*/
-   
-//Question 25
+ 
+//Question 24
 cout << "Do you see yourself as a compassionate person, yes or no?" << endl;
 cin >> Input;
 
@@ -630,7 +614,7 @@ cin >> Input;
 cout << endl;
 
 
-if(Rat_== 3){
+if(Rat_== 3){                                                                   //This is going to output if you are an animal or if your not an animal
     cout << "You have charectiristics of the Rat zodiac sign" << endl;
         Rats = "Rat";
     
@@ -784,13 +768,13 @@ if(Pig_== 3){
 
 cout << endl;    
     
-cout << "Your birth year said you were the " << birthdayAnimal << " zodiac sign, and the test said you had charectiristics of the:" << endl;
+cout << "Your birth year said you were the " << birthdayAnimal << " zodiac sign, and the test said you had charectiristics of the:" << endl;                            //outputting the results
 cout << Rats << " " << Oxs << " " << Tigers << " " << Rabbits << " " << Dragons << " " << Snakes << " " << Horses << " " << Goats << " " << Monkeys << " " << Roosters << " " << Dogs << " " << Pigs << endl;    
     
     
-Fout << "Your Name: " << User.getName() <<"." <<endl<< " Your birth year:" << User.getBirthday() << endl;
+Fout << "Your Name: " << User.getName() <<"." <<endl<< " Your birth year:" << User.getBirthday() << endl;                                           //outputting the results to the txt file
 Fout << "Your birth year said you were the " << birthdayAnimal << " zodiac sign, and the test said you had charectiristics of the:" << endl;
-Fout << Rats << " " << Oxs << " " << Tigers << " " << Rabbits << " "  << Dragons << " " << Snakes << " " << Horses << " " << Goats << " " << Monkeys << " " << Roosters << " " << Dogs << " " << Pigs << endl;
+Fout << Rat << " " << Ox << " " << Tiger << " " << Rabbit << " "  << Dragon << " " << Snake << " " << Horse << " " << Goat << " " << Monkey << " " << Rooster << " " << Dog << " " << Pig << endl;
     
     
     
@@ -801,19 +785,3 @@ Fout.close();
 
     
 }
-
-
-
-/*
-Do you prefer to be alone or surrounded by friends?
-Are you a morning person?
-Do you like heights?
-Do you like getting dirty or prefer to stay clean?
-Are you a hard worker?
-Do you tend to chase, or are you the one being chased?
-Do you tend to earn your worth, or do you tent to take it from others?
-Are you stealthy?
-*/
-
-
-//cout << "Are you 'mischivious'?"<< endl;
